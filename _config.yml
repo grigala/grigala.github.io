@@ -50,14 +50,14 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification : kNB-MyvC6LIJY3Fd5FX2eZG8B6mY2UD9muSuqtN5kOg
+google_site_verification : NDjChrC81tqvOzsZH2wzKCIVRget-lcqmqn-MsDuL4U
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : "grigala_"
 facebook:
   username               :
   app_id                 :
