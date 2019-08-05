@@ -50,7 +50,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification :
+google_site_verification : kNB-MyvC6LIJY3Fd5FX2eZG8B6mY2UD9muSuqtN5kOg
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
@@ -73,9 +73,9 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               :  "custom" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : UA-145071003-1
 
 
 # Site Author
@@ -123,6 +123,7 @@ include:
   - _pages
   - files
 exclude:
+  - ".idea"
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
