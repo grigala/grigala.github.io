@@ -1,4 +1,8 @@
+# Local copy of the website, no need to push this.
 _site/
+
 .idea/
 node_modules/
+package-lock.json
+Gemfile.lock
 
