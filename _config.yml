@@ -21,9 +21,9 @@ future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "disqus"# false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            :
+    shortname            : grigala-github-io
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
-  email            : "g.grigalashvili@unibas.ch"
+  email            : "grigala@protonmail.ch"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        : "grigala"
@@ -99,7 +99,7 @@ author:
   github           : "grigala"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "grigala"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
@@ -256,7 +256,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Zurich # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
