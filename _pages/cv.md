@@ -9,6 +9,10 @@ redirect_from:
 
 {% include base_path %}
 
+- [ ] `TODO: Hide this page and add an app download instead` 
+
+<a target='_blank' href='https://play.google.com/store/apps/details?id=ch.grigala.gg&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width='40%'/></a>
+
 Education
 ======
 * B.S. in GitHub, GitHub University, 2012
