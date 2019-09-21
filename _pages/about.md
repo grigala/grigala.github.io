@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "George Grigalashvili"
+title: "Welcome"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-About page will land here...
+Welcome to my empty website.
 
 A data-driven personal website
 ======
