@@ -18,7 +18,7 @@ teaser                   :  # filename of teaser fallback teaser image placed in
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : false
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
+read_more                : "enabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
   provider               : "disqus"# false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
@@ -108,7 +108,7 @@ author:
   linkedin         :
   orcid            : 
   pinterest        :
-  soundcloud       :
+  soundcloud       : "grigala"
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
@@ -116,9 +116,10 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          :
+  youtube          : "GeorgeGrigalashvili"
   wikipedia        :
   telegram         : "grigala"
+  spotify          : "grigala"
 
 
 # Reading Files
@@ -195,6 +196,9 @@ collections:
   playground:
     output: true
     permalink: /:collection/:path/
+  podcast:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -258,9 +262,18 @@ defaults:
       type: playground
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: false
       comment: false
+  # _podcast
+  - scope:
+      path: ""
+      type: podcast
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
 
 # Sass/SCSS
 sass:
