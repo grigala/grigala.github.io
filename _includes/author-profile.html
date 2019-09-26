@@ -58,6 +58,9 @@
       {% if author.instagram %}
         <li><a href="https://instagram.com/{{ author.instagram }}"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
       {% endif %}
+      {% if author.youtube %}
+        <li><a href="https://www.youtube.com/{{ author.youtube }}"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+      {% endif %}
       {% if author.tumblr %}
         <li><a href="https://{{ author.tumblr }}.tumblr.com"><i class="fab fa-fw fa-tumblr-square" aria-hidden="true"></i> Tumblr</a></li>
       {% endif %}
@@ -84,9 +87,6 @@
       {% endif %}
       {% if author.steam %}
         <li><a href="https://steamcommunity.com/id/{{ author.steam }}"><i class="fab fa-fw fa-steam-square" aria-hidden="true"></i> Steam</a></li>
-      {% endif %}
-      {% if author.youtube %}
-        <li><a href="https://www.youtube.com/user/{{ author.youtube }}"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>
       {% endif %}
       {% if author.soundcloud %}
         <li><a href="https://soundcloud.com/{{ author.soundcloud }}"><i class="fab fa-fw fa-soundcloud" aria-hidden="true"></i> Soundcloud</a></li>
@@ -118,12 +118,15 @@
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
       {% endif %}
+      {% if author.spotify %}
+        <li><a href="https://open.spotify.com/user/{{ author.spotify }}"><i class="fab fa-fw fa-spotify" aria-hidden="true"></i> Spotify</a></li>
+      {% endif %}
       {% if author.telegram %}
 <!--        <li><a href="https://t.me/{{ author.telegram }}"><i class="fab fa-fw fa-telegram" aria-hidden="true"></i> Telegram</a></li>-->
         <li>
           <a href="https://telegram.im/@{{ author.telegram }}" target="_blank"
                   class="telegramim_button telegramim_shadow telegramim_pulse"
-                  style="font-size:12px;width:92px;background:#008800;box-shadow:1px 1px 5px #38761d;color:#FFFFFF;border-radius:100px;"
+                  style="font-size:12px;width:92px;background:#008800;text-align:left;box-shadow:1px 1px 4px #38761d;color:#FFFFFF;border-radius:100px;"
                   title=""><i class="fab fa-fw fa-telegram" aria-hidden="true"></i>Telegram
           </a>
         </li>
