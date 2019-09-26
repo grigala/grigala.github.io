@@ -968,7 +968,7 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label,
   font-family: "Helvetica", "Arial", sans-serif;
   margin: 0;
   padding: 4px 0;
-  width: 100%;
+  width: 200%;
   background: none;
   text-align: left;
   color: inherit;
@@ -1143,49 +1143,6 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label,
 .mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
   color: rgb(213, 0, 0);
   font-size: 12px;
-}
-
-.mdl-textfield__input {
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  display: block;
-  font-size: 16px;
-  font-family: "Helvetica", "Arial", sans-serif;
-  margin: 0;
-  padding: 4px 0;
-  width: 100%;
-  background: none;
-  text-align: left;
-  color: inherit;
-}
-
-.mdl-textfield__input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.mdl-textfield__input[type="number"]::-webkit-inner-spin-button, .mdl-textfield__input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.mdl-textfield.is-focused .mdl-textfield__input {
-  outline: none;
-}
-
-.mdl-textfield.is-invalid .mdl-textfield__input {
-  border-color: rgb(213, 0, 0);
-  box-shadow: none;
-}
-
-fieldset[disabled] .mdl-textfield .mdl-textfield__input,
-.mdl-textfield.is-disabled .mdl-textfield__input {
-  background-color: transparent;
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.26);
-}
-
-.mdl-textfield textarea.mdl-textfield__input {
-  display: block;
 }
 
 .mdl-textfield__error {
