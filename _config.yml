@@ -50,10 +50,13 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification : NDjChrC81tqvOzsZH2wzKCIVRget-lcqmqn-MsDuL4U
+google_site_verification : "NDjChrC81tqvOzsZH2wzKCIVRget-lcqmqn-MsDuL4U"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
+
+google:
+  youtube_api_key        : "AIzaSyAan769vckZkx9x3uKQVtyRfVbsrSwVblI"
 
 # Social Sharing
 twitter:
@@ -82,7 +85,7 @@ analytics:
 author:
   name             : "George Grigalashvili"
   avatar           : "https://avatars0.githubusercontent.com/u/2084794?s=460&v=4"
-  bio              : "Passionate Software Engineer, Part time Research Scientist. Obsessed with Exact and Natural sciences. 🌳"
+  bio              : "Passionate Software Engineer and Computer Scientist, Part time Research Scientist. Obsessed with Exact and Natural sciences. 🌳"
   location         : "Switzerland"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"

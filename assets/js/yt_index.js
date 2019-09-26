@@ -4,6 +4,7 @@ $(function () {
     let $channelForm = $('#channel-form');
     let $subsNotPublicBox = $('#subs-not-public-box');
     let $urlHelpBox = $('#url-help-box');
+    const API_KEY = "AIzaSyAan769vckZkx9x3uKQVtyRfVbsrSwVblI"; // Restricted
 
     $('#url-help-link').click((e) => {
         e.preventDefault();
@@ -32,7 +33,7 @@ $(function () {
         }
         gapi.load('client', function () {
             gapi.client.init({
-                'apiKey': 'AIzaSyA2IcjqAXEqSiGonSw9JuB7qTCsX6MQiRU',
+                'apiKey': API_KEY,
                 'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest']
             }).then(function () {
 
@@ -156,7 +157,6 @@ $(function () {
                     if (typeof gtag === 'function') {
                         gtag('event', 'fetched_subs', {'subs_count': response.pageInfo.totalResults});
                     }
-                    $('.mdl-list').each('li', new SimpleBar());
 
 
                 }
