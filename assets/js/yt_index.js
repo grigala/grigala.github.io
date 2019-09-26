@@ -4,7 +4,7 @@ $(function () {
     let $channelForm = $('#channel-form');
     let $subsNotPublicBox = $('#subs-not-public-box');
     let $urlHelpBox = $('#url-help-box');
-    const API_KEY = "AIzaSyAan769vckZkx9x3uKQVtyRfVbsrSwVblI"; // Restricted
+    const API_KEY = "{{ google.youtube_api_key }}"; // Restricted
 
     $('#url-help-link').click((e) => {
         e.preventDefault();
