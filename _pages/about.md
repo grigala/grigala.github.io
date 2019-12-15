@@ -43,12 +43,14 @@ For more information, questions or collaborations feel free to ping me at [griga
 
 **Note for HR's**: If you are interested in my profile and actively looking for my CV please head over to [CV](/cv) 
 section download the **GG CV** app and send me a message to obtain a secure key to unlock the app, or simply request a 
-pdf version.
+pdf version. 😁
+{: .notice}
 
 PGP Public Key
 ---
 <details><summary>0xC04A4DF9-pub.asc</summary>
 <p>
+-----BEGIN PGP PUBLIC KEY BLOCK-----<br>
 xsFNBF2GkuMBEACrn2wuJm2DHJB4BsjR8UlQrB1sf164Zse2SRbaw2S/l9Yf2NZ/
 nxto1CDcfM7DdRF4J/uhmcmH3Ywp+hJ5tocwmnuNVW++U3qkuyuKfrGcPCyEJpsl
 PPcvWq/SgU1UMYBg0MihEv6DkMw1ls96lRcSwCvWsjTTtTvir0deh41bDITODu/h
@@ -141,7 +143,9 @@ PWyANxzrM/5A10801UGccOWykY9oMNPLGjeAIZ043rgRKOBegA0oBgW6auqk2Skw
 +ym7YxiYu1jryIu9sa7ZpnTrqabknABLAJeP1Hugfhvhw4ps2AgL6kiqCr0Vpnkj
 nGiGSlKoKk7O8likwj8T3h+Uo7o6sKiYTHkJ46LYPams+DnkRJlEzh9dMWscQTnw
 EgxZT6J9ughAwmQJSM3PVs2kvp4b7Vjnxh0GVtcYM+nEGlMjVr+WnAVlcyi/2nUb
-9c5nwyOZCx/qgQ===nPm8
+9c5nwyOZCx/qgQ==
+=nPm8<br>
+-----END PGP PUBLIC KEY BLOCK-----
 </p>
-
 </details>
+{: .notice}

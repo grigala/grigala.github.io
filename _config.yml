@@ -102,13 +102,13 @@ author:
   github           : "grigala"
   google_plus      :
   keybase          :
-  instagram        : "grigala"
+  instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
   orcid            : 
   pinterest        :
-  soundcloud       : "grigala"
+  soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
@@ -116,7 +116,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : "GeorgeGrigalashvili"
+  youtube          :
   wikipedia        :
   telegram         : "grigala"
   spotify          : "grigala"
