@@ -32,13 +32,6 @@ redirect_from:
 {% for post in site.playground %}
 <ul>
     {% case post.title %}
-    {% when "Binary Clock" %}
-    <!-- <li class="btns">
-        <button class="mdc-button mdc-button--raised bc">
-            <i class="material-icons mdc-button__icon" aria-hidden="true">watch_later</i>
-            <span><a href="{{ post.permalink }}">{{post.title}}</a></span>
-        </button>
-    </li> -->
     {% when "YouTube Subscriptions" %}
     <li class="btns">
         <button class="mdc-button mdc-button--raised yt">
@@ -47,6 +40,12 @@ redirect_from:
         </button>
     </li>
     {% endcase %}
+    <li class="btns">
+        <button class="mdc-button mdc-button--raised bc">
+            <i class="material-icons mdc-button__icon" aria-hidden="true">watch_later</i>
+            <span><a href="/playground/binclock">Binary Clock</a></span>
+        </button>
+    </li>
 </ul>
 {% endfor %}
 <h3> All my fun projects will eventually end up here...</h3>

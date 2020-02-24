@@ -27,12 +27,13 @@ You can rollback the changes or even delete the repository and start over -- jus
 Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) 
 that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
 
+<!-- 
 Job related skills
 ---
-<!-- - Programming Languages:
+- Programming Languages:
 - Frameworks:
 - Tools:
-- Miscellaneous:   -->
+- Miscellaneous:   
 
 Hobbies and other interests
 ---
@@ -45,6 +46,7 @@ For more information, questions or collaborations feel free to ping me at [griga
 section download the **GG CV** app and send me a message to obtain a secure key to unlock the app, or simply request a 
 pdf version. 😁
 {: .notice}
+-->
 
 PGP Public Key
 ---

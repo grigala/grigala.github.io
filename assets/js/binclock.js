@@ -1,4 +1,4 @@
-const main = function () {
+$(function () {
 
     $(document).keydown(function (event) {
 
@@ -8,8 +8,14 @@ const main = function () {
             $('.header').toggleClass('disapear');
         } else if (event.which === 66) {
             $('.bin').toggleClass('disapear');
+            console.log("toggle binary representation");
         } else if (event.which === 67) {
             $('.dec').toggleClass('disapear');
+            console.log("toggle decimal clock")
+        } else if (event.which === 70) {
+            openFullscreen();
+        } else if (event.which === 27) {
+            closeFullscreen();
         }
     });
 
@@ -151,6 +157,29 @@ const main = function () {
 
     };
 
-};
+    let elem = document.documentElement;
+    function openFullscreen() {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) {
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) {
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) {
+            elem.msRequestFullscreen();
+        }
+    }
 
-$(document).ready(main);
+    function closeFullscreen() {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+    }
+
+});
