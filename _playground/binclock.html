@@ -1,27 +1,38 @@
----
-layout: archive
-title: "Binary Clock"
-permalink: /playground/binclock
-collection: playground
-author_profile: true
-redirect_from:
-- /bc
-- /binclock
----
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="lang" content="en"/>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/binclock.css" rel="stylesheet">
+    <link href="/images/favicon.ico" rel="shortcut icon">
+    <title>I hope you know what you are looking at...✌</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145071003-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-145071003-1');
+    </script>
 </head>
+
 <body>
-<div class="fullScreen">
-    <button class="close o1" onclick="openFullscreen();">Toggle Full Screen</button>
-    <button class="close o2 hidden" onclick="closeFullscreen();">Exit Full Screen</button>
+<div>
+    <button class="close b1" onclick="window.open('/playground', '_self')">Go Back</button>
 </div>
 
-
+<div class="header toggle">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>BINARY CLOCK</h1>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="clock">
     <div class="container-fluid">
         <div class="row">
@@ -81,7 +92,7 @@ redirect_from:
     </div>
 </div>
 
-<div class="bin">
+<div class="bin disapear">
     <div class="container-fluid">
         <div class="row">
 
@@ -179,37 +190,43 @@ redirect_from:
 </div>
 
 
+<div id="Modal" class="modal fade hidden" role="dialog">
+    <div class="modal-dialog">
 
-<script type="text/javascript" src="{{ base_path }}/assets/js/binclock.js"></script>
+        <div class="modal-content">
+
+            <div>
+                <button type="button" class="close" data-dismiss="modal"><span
+                        class="glyphicon glyphicon-remove"></span></button>
+                <h1>Help</h1>
+            </div>
+
+            <div class="modal-body">
+                <ul class="modal-list">
+                    <li>Press <b>h</b> to toggle this message.</li>
+                    <li>Press <b>t</b> to toggle the title.</li>
+                    <li>Press <b>b</b> to toggle the binary clock hints.</li>
+                    <li>Press <b>c</b> to toggle the decimal clock.</li>
+                    <li>Press <b>f</b> to toggle full screen.</li>
+                    <li>To go back, press "Go Back" button in the top left corner.</li>
+                </ul>
+                <h1 style="text-align: center">with <b style="color: limegreen">&#x2661</b> G.G.<br>🍻🍻🍻 </h1>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<h2 class="txt">Press H for help, or click <button onclick="help()">here</button>!</h2>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/js/binclock.js"></script>
 <script type="text/javascript">
-    let elem = document.documentElement;
-
-    function openFullscreen() {
-        $('.o1').addClass('hidden');
-        $('.o2').removeClass('hidden');
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-        } else if (elem.mozRequestFullScreen) {
-            elem.mozRequestFullScreen();
-        } else if (elem.webkitRequestFullscreen) {
-            elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) {
-            elem.msRequestFullscreen();
-        }
-    }
-
-    function closeFullscreen() {
-        $('.o2').addClass('hidden');
-        $('.o1').removeClass('hidden');
-        if (document.exitFullscreen) {
-            document.exitFullscreen();
-        } else if (document.mozCancelFullScreen) {
-            document.mozCancelFullScreen();
-        } else if (document.webkitExitFullscreen) {
-            document.webkitExitFullscreen();
-        } else if (document.msExitFullscreen) {
-            document.msExitFullscreen();
-        }
+    function help() {
+        $('.modal').removeClass('hidden').modal('toggle')
     }
 </script>
 </body>
