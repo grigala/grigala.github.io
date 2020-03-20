@@ -4,6 +4,26 @@
 
 $doc-font-size              : 16;
 
+@font-face {
+  font-family: "Geo3D";
+  src: url("/assets/fonts/ge/3d_unicode.ttf") format('ttf');
+}
+
+@font-face {
+  font-family: "BPG Arial";
+  src: url("/assets/fonts/ge/bpg_arial_2009.ttf") format('ttf');
+}
+
+@font-face {
+  font-family: "BPG Nino Mtavruli";
+  src: url("/assets/fonts/ge/bpg_nino_mtavruli_normal.ttf") format('ttf');
+}
+
+@font-face {
+  font-family: "BPG Nino Mtavruli Bold";
+  src: url("/assets/fonts/ge/bpg_nino_mtavruli_bold.ttf") format('ttf');
+}
+
 /* paragraph indention */
 $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
@@ -26,6 +46,8 @@ $blog_playfairdisplay       : 'Playfair Display', serif;
 $blog_raleway               : 'Raleway', sans-serif;
 $blog_raleway_dots          : 'Raleway Dots', cursive;
 $blog_ubuntu                : 'Ubuntu', sans-serif;
+$blog_geo_3d                : 'Geo3D';
+
 
 /* sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;
