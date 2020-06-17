@@ -9,11 +9,6 @@ excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
 ---
 {% include base_path %}
 {% include toc %}
-<aside class="sidebar__right">
-<nav class="toc" markdown="1">
-<header><h4 class="nav__title"><i class="fa fa-{{ include.icon | default: 'file-text' }}"></i> {{ include.title | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
-</nav>
-</aside>
 
 ### Normal Font
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -83,11 +78,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </div><br>
 
-```python
-import os
-import sys
-import numpy as np
-
-class Hello:
-    pass
-```
