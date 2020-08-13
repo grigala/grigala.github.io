@@ -77,3 +77,42 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div style="font-family: Ubuntu">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </div><br>
+
+### Testing Mathjax plugin
+$ i \hbar \frac{d}{d t}|\Psi(t)\rangle=\hat{H}|\Psi(t)\rangle $
+
+### Testing Syntax Highlighter
+
+<pre class="language-scala"><code>
+case class TranslationProposal(stddev: Double) extends
+        ProposalGenerator[Sample] with TransitionProbability[Sample] {
+
+    val perturbationDistr: MultivariateNormalDistribution = new MultivariateNormalDistribution(
+        DenseVector.zeros(3),
+        DenseMatrix.eye[Double](3) * stddev * stddev
+    )
+
+    def propose(sample: Sample): Sample = {
+        val newTranslationParameters = 
+            sample.parameters.translationParameters + 
+            EuclideanVector.fromBreezeVector(perturbationDistr.sample())
+        val newParameters = sample.parameters.copy(
+                translationParameters = newTranslationParameters
+        )
+
+        val rpTemplate: RenderParameter = RenderParameter.default
+        val newParamsConverted: RenderParameter = MoMoHelpers
+                .convertParametersToRenderParameters(newParameters, rpTemplate)
+
+
+        sample.copy(generatedBy=s"TranlationUpdateProposal ($stddev)", rps=newParamsConverted)
+    }
+
+    override def logTransitionProbability(from: Sample, to: Sample): Double = {
+        val residual: EuclideanVector[_3D] = to.parameters.translationParameters - 
+                                             from.parameters.translationParameters
+        perturbationDistr.logpdf(residual.toBreezeVector)
+    }
+}
+</code>
+</pre>
