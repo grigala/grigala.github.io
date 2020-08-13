@@ -27,6 +27,16 @@ You can rollback the changes or even delete the repository and start over -- jus
 Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) 
 that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
 
+
+ --- 
+<img src="https://grigala-stats.vercel.app/api?username=grigala&count_private=true&show_icons=true&line_height=33&title_color=009930&icon_color=009930" width="49%"/> <img src="https://grigala-stats.vercel.app/api/top-langs/?username=grigala&layout=compact&title_color=009930" width="49%"/>
+
+---
+
+<img src="https://codestats-readme.wegfan.cn/history-graph/grigala" width="100%" alt="">
+
+---
+
 <!-- 
 Job related skills
 ---
