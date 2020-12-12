@@ -16,7 +16,7 @@ Welcome to my empty website.
 
 ---
 
-<img src="https://codestats-readme.wegfan.cn/history-graph/grigala" width="100%" alt="">
+<img src="https://codestats-profile-readme.herokuapp.com/history-graph/grigala?max_languages=15" width="100%" alt="">
 
 ---
 
