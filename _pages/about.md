@@ -13,9 +13,11 @@ Welcome to my empty website.
 
  ---
 
-<img src="https://github-readme-stats.vercel.app/api?username=grigala&count_private=true&show_icons=true&line_height=21&title_color=009930&icon_color=009930&theme=light" alt="">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=grigala&layout=compact&title_color=009930&theme=light" alt="">
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=grigala&layout=compact&theme=light" alt="">
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=grigala&count_private=true&show_icons=true&line_height=21&title_color=009930&icon_color=009930&hide_border=true&theme=light" alt="">
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=grigala&layout=compact&title_color=009930&hide_border=true&theme=light" alt="">
+<img width="49%" src="http://github-readme-streak-stats.herokuapp.com?user=grigala&theme=vue&hide_border=true" alt="">
+<img width="49%" src="https://github-readme-stats.vercel.app/api/wakatime?username=grigala&layout=compact&hide_border=true&theme=light" alt="">
+
 
 ---
 
