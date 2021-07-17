@@ -9,10 +9,9 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my empty website.
+<img src="https://readme-typing-svg.herokuapp.com?width=800&color=009930&center=true&vCenter=true&lines=Welcome+to+my+empty+website!">
 
  ---
-
 <img width="49%" src="https://github-readme-stats.vercel.app/api?username=grigala&count_private=true&show_icons=true&line_height=21&title_color=009930&icon_color=009930&hide_border=true&theme=light" alt="">
 <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=grigala&layout=compact&title_color=009930&hide_border=true&theme=light" alt="">
 <img width="49%" src="http://github-readme-streak-stats.herokuapp.com?user=grigala&theme=vue&hide_border=true" alt="">
