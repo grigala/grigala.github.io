@@ -11,12 +11,16 @@ redirect_from:
 
 Welcome to my empty website.
 
- --- 
-<img src="https://grigala-stats.vercel.app/api?username=grigala&count_private=true&show_icons=true&line_height=33&title_color=009930&icon_color=009930" width="49%"/> <img src="https://grigala-stats.vercel.app/api/top-langs/?username=grigala&layout=compact&title_color=009930" width="49%"/>
+ ---
+
+<img src="https://github-readme-stats.vercel.app/api?username=grigala&count_private=true&show_icons=true&line_height=21&title_color=009930&icon_color=009930&theme=light" alt="">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=grigala&layout=compact&title_color=009930&theme=light" alt="">
+<img src="https://github-readme-stats.vercel.app/api/wakatime?username=grigala&layout=compact&theme=light" alt="">
 
 ---
 
 <img src="https://codestats-profile-readme.herokuapp.com/history-graph/grigala?max_languages=15" width="100%" alt="">
+
 
 ---
 
