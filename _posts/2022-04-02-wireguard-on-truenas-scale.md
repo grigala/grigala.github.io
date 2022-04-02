@@ -42,7 +42,7 @@ out and configured properly.
 ## Intro
 
 Configuring the WireGuard VPN in the TrueNAS systems used to be quite an easy
-task. Until they've released their new Debian based TrueNAS SCALE(and obviously 
+task. Until they've released their new Linux based(as opposed to FreeBSD in case of TrueNAS Core) TrueNAS SCALE(and obviously 
 I've jumped on it, like a maniac) which is going to be a big hit for people 
 who are actively using virtualization software like
 Docker and Kubernetes. Now, in most use-cases people are running VPN of of their NAS directly,
