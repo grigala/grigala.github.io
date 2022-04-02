@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<img src="https://readme-typing-svg.herokuapp.com?width=800&color=009930&center=true&vCenter=true&lines=Welcome+to+my+empty+website!;+I+will+start+adding+some+content+as+soon+as+I+find+spare+time.">
+<img src="https://readme-typing-svg.herokuapp.com?width=800&color=009930&size=34&center=true&vCenter=true&lines=Knowledge.+Success.+Health.+Happiness.;">
 
  ---
 <img width="49%" src="https://github-readme-stats.vercel.app/api?username=grigala&count_private=true&show_icons=true&line_height=21&title_color=009930&icon_color=009930&hide_border=true&theme=light" alt="">

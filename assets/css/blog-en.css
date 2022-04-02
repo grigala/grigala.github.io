@@ -1,9 +1,15 @@
 .page__inner-wrap p {
-    font-family: "Lora" !important;
-    /*font-family: "Playfair Display" !important;*/
+    /*font-family: "Lora" !important;*/
+    font-family: "Playfair Display" !important;
     /*font-family: "Oxygen" !important;*/
     /*font-family: "Raleway" !important;*/
 }
+
+.page__inner-wrap b {
+  font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif !important;
+  color: #04b01b;
+}
+
 .page__inner-wrap h2 {
     font-family: "Lora" !important;
     text-align: center;
@@ -38,6 +44,3 @@ blockquote:before {
 blockquote p {
     display: inline;
 }
-
-
-
