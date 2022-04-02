@@ -21,7 +21,7 @@ and do your own research.
 
 <details>
   <summary style="font-family: 'Playfair Display'">
-  As the weather kinda decided to ruin my plans during the god damn mid-spring,
+  As the weather kinda decided to ruin my plans for today during the god damn mid-spring,
   I decided to make myself cozy and tinker with my <b>90 TB</b> TrueNAS SCALE system.
 
   </summary>
