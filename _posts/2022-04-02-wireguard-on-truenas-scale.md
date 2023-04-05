@@ -61,22 +61,38 @@ MBP           *********      10.6.0.5        151KiB              413KiB         
 </code>
 </pre>
 
-Easy, I hear you say?! Just add another configuration to the interface and copy
-it over to the NAS system. Not so fast...
+Just add another configuration to the interface and copy it over to the NAS system!
+
+## Configuration
+
+Since TrueNAS SCALE retains the /root directory between updates, we can store our [wg-quick](https://manpages.debian.org/unstable/wireguard-tools/wg-quick.8.en.html){:target="_blank"} Configuration in `/root/` and use `wg-quick up` provided by [wireguard-tools](https://git.zx2c4.com/wireguard-tools){:target="_blank"} to create and spin up our VPN.
+
+Simply create or download your configuration file and save it to `/root/wg0.conf`. An example is provided below.
+
+Then navigate to System Settings > Advanced > Init/Shutdown Scripts and create a new entry
+
+<pre style="font-size: 17px;">
+Description: Wireguard VPN
+Type: Command
+Command: wg-quick up /root/wg0.conf
+When: Post Init
+Enabled: True
+Timeout: 10
+</pre>
 
 
-## The current state of TrueNAS SCALE
-
-TrueNAS SCALE in fact, does have WireGuard tools([wireguard-tools](https://git.zx2c4.com/wireguard-tools){:target="_blank"}) installed by default. As far as I've read(don't quote me on that) so far
-it seems like they are using it to communicate with their [TrueCommand](https://www.truenas.com/truecommand){:target="_blank"} management system.  However, at this point there's no real tutorial or manual how to setup WireGuard inside the SCALE system. Instead they kinda default to OpenVPN configuration which is noticeably easy
-to configure but a lot of people including me find WireGuard to be much faster than OpenVPN
-in general.
-
-<pre class="language-shell" style="font-size: 17px;">
+`/root/wg0.conf`
+<pre style="font-size: 17px;">
 <code>
-root@truenas[~]# wg --version
-wireguard-tools v1.0.20210223 - https://git.zx2c4.com/wireguard-tools/
+[Interface]
+PrivateKey = 4ITVmRuCbdZ2fBOgkJVeVxaJIqh5TEGYpki+TBFvMW8=
+Address = 10.6.0.6/32
+
+[Peer]
+PublicKey = AF2gxhJmco7srsbU+clix40wsngeLKpycd4+316T7DA=
+AllowedIPs = 10.6.0.1/24
+Endpoint = raspberrypi:51820
 </code>
 </pre>
 
-<h2 style="color:red">The story is currently developing...</h2>
+You should now be connected via WireGuard!
